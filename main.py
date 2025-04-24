@@ -42,16 +42,16 @@ def main():
     total_hours = total_minutes / 60
     total_cost = total_hours * RATE_PER_HOUR
 
-    print('  =============================')
+    print('  ================================')
     for i, minutes in enumerate(daily_times, 1):
         print(f"         День {i}: {format_time(minutes)}")
-    print('  =============================')
+    print('  ================================')
     print(f"    Общее время: {format_time(total_minutes)}")
     print(f"      Стоимость: ${total_cost:.2f}")
-    print('  =============================')
+    print('  ================================')
     print(f'   Отложить 15%: ${(total_cost / 100) * 15:.2f}')
     print(f'        Остаток: ${(total_cost / 100) * 85:.2f}')
-    print('  =============================')
+    print('  ================================')
 
 if __name__ == "__main__":
     main()
